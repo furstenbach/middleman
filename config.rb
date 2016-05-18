@@ -36,12 +36,8 @@ end
 
 # Build-specific configuration
 configure :build do
-  require 'extensions/build_cleaner'
 
-  configure :build do
-    activate :relative_assets
-    activate :build_cleaner
-  end
+  
   # Minify CSS on build
   # activate :minify_css
 
@@ -49,9 +45,4 @@ configure :build do
   # activate :minify_javascript
 
 
-end
-
-activate :deploy do |deploy|
-  deploy.build_before = true
-  deploy.deploy_method = :git
 end

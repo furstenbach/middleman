@@ -5,3 +5,8 @@
   %h1 Hej Jenny, välkommen!
   %p.doc
     = link_to 'Read Documentation Online', 'https://middlemanapp.com', target: '_blank'
+
+  .projects
+    - data.projects.each do |project|
+      %h4= project[:name]
+      %p= project[:description]
