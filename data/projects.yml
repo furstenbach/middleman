@@ -1,5 +1,34 @@
-- name: My First Website
-  description: Simple HTML5 site I've build during the PrepCourse
+- name: Stockholm+Acumen
+  description: Volunteer-led chapter of Acumen that I founded and now chair
+  link: stockholm.plusacumen.org
+  image_url: http://stockholm.plusacumen.org/files/2014/10/Chapter_Stockholm_cropped-117x36.png
 
-- name: FizzBuzz
-  description: My first Test driven ruby project
+- name: GoodAdmin
+  description: My company which helps small and medium-sized organisations streamline their administration
+  link: https://www.weld.io/jenny-furstenbachs-landingpage-2
+  image_url: http://sd.keepcalm-o-matic.co.uk/i/keep-calm-and-love-admin-60.png
+
+- name: Scandinavian Airlines
+  description: Where I used to work
+  link: www.flysas.com
+  image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Scandinavian_Airlines_logo.svg/2000px-Scandinavian_Airlines_logo.svg.png
+
+- name: Familjekollo Gällnö
+  description: A yearly event for friends and their families that we organize at the beautiful island of Gällnö outside of Stockholm
+  link: https://www.facebook.com/groups/333425496700397/?fref=ts
+  image_url: http://www.stockholm.se/PageFiles/49151/Bildspel/2014/2016-630x365.jpg
+
+- name: Ett bilfritt År
+  description: Research project by Royal Institute of Technology about switching from car to electrical vehicles. We participated and sold our car.
+  link: http://www.ettbilfrittar.se/
+  image_url: http://www.ettbilfrittar.se/images/logo.png
+
+- name: SE Forum
+  description: Organisation aimed at promoting social entrepreneurship where I am on the board
+  link: www.se-forum.se
+  image_url: http://media.test.se-forum.se.loopiadns.com/2013/09/Logo5.png
+
+- name: Sweden Japan Foundation
+  description: Promoting collaboration between the two countries within academia and commerce. I am on the board.
+  link: www.swedenjapan.se
+  image_url: http://swejap.halvarsson.se/images/mainLogo.gif

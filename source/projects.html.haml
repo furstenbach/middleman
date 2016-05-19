@@ -2,3 +2,20 @@
   - data.projects.each do |project|
     %h4= project[:name]
     %p= project[:description]
+.row
+  .large-10.columns
+    %h1 Projects
+    %p{style: 'display: inline-block !important;'} During my time at
+    = link_to 'Craft Academy', 'http://craftacademy.se', target: '_blank'
+    I've been working on multiple projects...
+  .row#projects
+  .large-8.columns
+  - data.projects.each_slice(3) do |group|
+    .row
+    - group.each do |project|
+      .large-4.small-6.columns
+        = image_tag image_url(project[:image_url]), style: 'width:250px;height:auto;overflow:hidden'
+        .panel
+          = link_to project[:name], git_url(project[:git_repo]), target: '_blank'
+          %h6.subheader
+            = project[:description]
