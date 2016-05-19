@@ -9,55 +9,23 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
-# With alternative layout
-# page "/path/to/file.html", layout: :otherlayout
+require 'extensions/build_cleaner'
 
-# Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
-# proxy "/this-page-has-no-template.html", "/template-file.html", locals: {
-#  which_fake_page: "Rendering a fake page with a local variable" }
-
-# General configuration
-
-# Reload the browser automatically whenever files change
 configure :development do
   activate :livereload
 end
-
-activate :directory_indexes do
-
-end
-
-
-activate :google_analytics do |ga|
-  ga.tracking_id = 'UA-77953492-1'
-end
-
-###
-# Helpers
-###
-
-# Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
-
-# Build-specific configuration
-
-require 'extensions/build_cleaner'
 
 configure :build do
   activate :relative_assets
   activate :build_cleaner
 end
 
-  # Minify CSS on build
-  # activate :minify_css
+activate :google_analytics do |ga|
+  ga.tracking_id = 'UA-77953492-1'
+end
 
-  # Minify Javascript on build
-  # activate :minify_javascript
-
+activate :directory_indexes do
+end
 
 activate :deploy do |deploy|
   deploy.build_before = true
