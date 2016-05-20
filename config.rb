@@ -20,6 +20,7 @@ end
 configure :build do
   activate :relative_assets
   activate :build_cleaner
+#  set :http_prefix, "/middleman"
 end
 
 activate :google_analytics do |ga|
