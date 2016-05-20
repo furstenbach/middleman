@@ -1,3 +1,5 @@
+require 'extensions/build_cleaner'
+
 ###
 # Page options, layouts, aliases and proxies
 ###
@@ -9,7 +11,7 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
-require 'extensions/build_cleaner'
+
 
 configure :development do
   activate :livereload

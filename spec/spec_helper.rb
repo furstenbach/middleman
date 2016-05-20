@@ -5,6 +5,7 @@ require 'middleman-core'
 require 'middleman-core/rack'
 require 'middleman-livereload'
 require 'middleman-deploy'
+require 'middleman-google-analytics'
 
 middleman_app = ::Middleman::Application.new
 
