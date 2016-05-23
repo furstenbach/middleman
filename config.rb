@@ -27,6 +27,10 @@ activate :google_analytics do |ga|
   ga.tracking_id = 'UA-77953492-1'
 end
 
+activate :blog do |blog|
+  # set options on blog
+end
+
 activate :directory_indexes do
 end
 

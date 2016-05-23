@@ -6,10 +6,10 @@ describe 'index', type: :feature do
     visit '/'
   end
 
-  it 'says Hej to Jenny' do
+  it 'says Welcome' do
     expect(page).to have_selector 'h1'
     within '.welcome' do
-      expect(page).to have_content 'Hej Jenny'
+      expect(page).to have_content 'Welcome'
     end
   end
 
@@ -20,15 +20,15 @@ describe 'index', type: :feature do
   it 'displays project list' do
     expect(page).to have_css '.projects'
     within '.projects' do
-      expect(page).to have_content 'My First Website'
-      expect(page).to have_content 'FizzBuzz'
+      expect(page).to have_content 'Acumen'
+      expect(page).to have_content 'Bilfritt'
     end
   end
 
   it 'renders footer partial' do
     expect(page).to have_selector 'footer'
     within 'footer' do
-      expect(page).to have_content 'Copywrite'
+      expect(page).to have_content 'Copyright'
     end
   end
 
@@ -38,6 +38,7 @@ describe 'index', type: :feature do
       expect(page).to have_content 'Home'
       expect(page).to have_content 'About'
       expect(page).to have_content 'Projects'
+      expect(page).to have_content 'Blog'
     end
   end
 
